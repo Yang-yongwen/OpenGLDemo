@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initGL() {
         gl_surface.setEGLContextClientVersion(2)
-        gl_surface.setRenderer(AirHockeyRenderer())
+        gl_surface.setRenderer(AirHockeyRenderer(this))
     }
 
     override fun onResume() {
