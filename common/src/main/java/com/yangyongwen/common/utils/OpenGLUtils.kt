@@ -1,4 +1,4 @@
-package com.yangyongwen.opengldemo.utils
+package com.yangyongwen.common.utils
 
 import android.app.ActivityManager
 import android.content.Context

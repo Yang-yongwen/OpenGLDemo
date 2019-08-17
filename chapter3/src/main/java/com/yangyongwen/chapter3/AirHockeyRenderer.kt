@@ -1,10 +1,10 @@
-package com.yangyongwen.opengldemo
+package com.yangyongwen.chapter3
 
 import android.content.Context
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
-import com.yangyongwen.opengldemo.utils.ResourceUtils
-import com.yangyongwen.opengldemo.utils.ShaderHelper
+import com.yangyongwen.common.utils.ResourceUtils
+import com.yangyongwen.common.utils.ShaderHelper
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import javax.microedition.khronos.egl.EGLConfig
@@ -26,25 +26,25 @@ class AirHockeyRenderer(private val context: Context) : GLSurfaceView.Renderer {
     }
 
     private val tableVerticesWithTriangles = floatArrayOf(
-            -0.5f, -0.5f,
-            0.5f, 0.5f,
-            -0.5f, 0.5f,
+        -0.5f, -0.5f,
+        0.5f, 0.5f,
+        -0.5f, 0.5f,
 
-            -0.5f, -0.5f,
-            0.5f, -0.5f,
-            0.5f, 0.5f,
+        -0.5f, -0.5f,
+        0.5f, -0.5f,
+        0.5f, 0.5f,
 
-            -0.5f, 0f,
-            0.5f, 0f,
+        -0.5f, 0f,
+        0.5f, 0f,
 
-            0f, -0.25f,
-            0f, 0.25f
+        0f, -0.25f,
+        0f, 0.25f
     )
 
     private val vertexData = ByteBuffer.allocateDirect(tableVerticesWithTriangles.size * BYTES_PER_FLOAT)
-            .order(ByteOrder.nativeOrder())
-            .asFloatBuffer()
-            .put(tableVerticesWithTriangles)
+        .order(ByteOrder.nativeOrder())
+        .asFloatBuffer()
+        .put(tableVerticesWithTriangles)
 
     private var uColorLocation = 0
     private var aPositionLocation = 0

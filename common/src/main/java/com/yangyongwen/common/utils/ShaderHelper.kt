@@ -1,4 +1,4 @@
-package com.yangyongwen.opengldemo.utils
+package com.yangyongwen.common.utils
 
 import android.opengl.GLES20
 import android.util.Log

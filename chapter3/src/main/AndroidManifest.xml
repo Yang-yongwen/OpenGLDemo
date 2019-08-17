@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yangyongwen.chapter3" />
+    package="com.yangyongwen.chapter3">
+
+    <application>
+        <activity android:name=".Chapter3Activity"></activity>
+    </application>
+
+</manifest>

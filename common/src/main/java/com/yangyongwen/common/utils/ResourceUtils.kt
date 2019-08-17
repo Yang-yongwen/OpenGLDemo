@@ -1,4 +1,4 @@
-package com.yangyongwen.opengldemo.utils
+package com.yangyongwen.common.utils
 
 import android.content.Context
 import java.io.BufferedReader
