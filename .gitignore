@@ -1,0 +1,13 @@
+.gradle/
+.idea/
+.tags*
+captures/
+reports/
+build/
+reports/
+local.properties
+.DS_Store
+.externalNativeBuild
+*iml
+*.patch
+proguard-log.pro
