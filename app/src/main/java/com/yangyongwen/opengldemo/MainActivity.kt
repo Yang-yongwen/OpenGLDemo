@@ -8,13 +8,15 @@ import android.widget.Button
 import android.widget.LinearLayout
 import com.yangyongwen.chapter3.Chapter3Activity
 import com.yangyongwen.chapter4.Chapter4Activity
+import com.yangyongwen.chapter5.Chapter5Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private val chapterList = arrayListOf(
         Chapter3Activity::class.java,
-        Chapter4Activity::class.java
+        Chapter4Activity::class.java,
+        Chapter5Activity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
