@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yangyongwen.chapter7">
+
+    <application>
+        <activity android:name="com.yangyongwen.chapter7.Chapter7Activity">
+        </activity>
+    </application>
+
+</manifest>
