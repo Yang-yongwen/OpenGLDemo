@@ -51,8 +51,8 @@ class AirHockeyRenderer(private val context: Context) : GLSurfaceView.Renderer {
 
     override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
         GLES20.glClearColor(0f, 0f, 0f, 0f)
-        val vertexShader = ShaderHelper.compileVertexShader(ResourceUtils.readTextFromResource(context, R.raw.simple_vertex_shader))
-        val fragmentShader = ShaderHelper.compileFragmentShader(ResourceUtils.readTextFromResource(context, R.raw.simple_fragment_shader))
+        val vertexShader = ShaderHelper.compileVertexShader(ResourceUtils.readTextFromResource(context, R.raw.simple_vertex_shader_chapter3))
+        val fragmentShader = ShaderHelper.compileFragmentShader(ResourceUtils.readTextFromResource(context, R.raw.simple_fragment_shader_chapter3))
         val program = ShaderHelper.linkProgram(vertexShader, fragmentShader)
         GLES20.glUseProgram(program)
 
