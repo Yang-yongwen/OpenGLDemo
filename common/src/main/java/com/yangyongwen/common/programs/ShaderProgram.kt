@@ -11,7 +11,7 @@ import com.yangyongwen.common.utils.ShaderHelper
  * @author YangYongwen
  * Created on 2019/08/19
  */
-class ShaderProgram(context: Context, vertexShaderResId: Int, fragmentShaderResId: Int) {
+open class ShaderProgram(context: Context, vertexShaderResId: Int, fragmentShaderResId: Int) {
 
     companion object {
         // Uniform constants
@@ -24,7 +24,7 @@ class ShaderProgram(context: Context, vertexShaderResId: Int, fragmentShaderResI
         const val A_TEXTURE_COORDINATES = "a_TextureCoordinates"
     }
 
-    private val program = ShaderHelper.buildProgram(
+    protected val program = ShaderHelper.buildProgram(
         ResourceUtils.readTextFromResource(context, vertexShaderResId),
         ResourceUtils.readTextFromResource(context, fragmentShaderResId)
     )
