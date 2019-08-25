@@ -11,6 +11,7 @@ import com.yangyongwen.chapter4.Chapter4Activity
 import com.yangyongwen.chapter5.Chapter5Activity
 import com.yangyongwen.chapter6.Chapter6Activity
 import com.yangyongwen.chapter7.Chapter7Activity
+import com.yangyongwen.chapter8.Chapter8Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,8 +21,9 @@ class MainActivity : AppCompatActivity() {
         Chapter4Activity::class.java,
         Chapter5Activity::class.java,
         Chapter6Activity::class.java,
-        Chapter7Activity::class.java
-    )
+        Chapter7Activity::class.java,
+        Chapter8Activity::class.java
+        )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
