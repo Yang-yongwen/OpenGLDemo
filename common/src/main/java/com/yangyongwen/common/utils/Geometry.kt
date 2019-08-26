@@ -23,3 +23,15 @@ data class Circle(val center: Point, val radius: Float) {
 }
 
 data class Cylinder(val center: Point, val radius: Float, val height: Float)
+
+data class Vector(val x: Float, val y: Float, val z: Float) {
+
+    companion object {
+        fun between(from: Point, to: Point): Vector {
+            return Vector(to.x - from.x, to.y - from.y, to.z - from.z)
+        }
+    }
+
+}
+
+data class Ray(val point: Point, val vector: Vector)

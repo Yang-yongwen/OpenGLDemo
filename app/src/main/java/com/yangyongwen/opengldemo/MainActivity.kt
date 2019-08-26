@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import com.yangyongwen.chapter10.Chapter10Activity
 import com.yangyongwen.chapter3.Chapter3Activity
 import com.yangyongwen.chapter4.Chapter4Activity
 import com.yangyongwen.chapter5.Chapter5Activity
@@ -22,8 +23,9 @@ class MainActivity : AppCompatActivity() {
         Chapter5Activity::class.java,
         Chapter6Activity::class.java,
         Chapter7Activity::class.java,
-        Chapter8Activity::class.java
-        )
+        Chapter8Activity::class.java,
+        Chapter10Activity::class.java
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +38,10 @@ class MainActivity : AppCompatActivity() {
             }
             ll_container.addView(
                 button,
-                LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+                LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                )
             )
         }
     }
