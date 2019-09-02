@@ -1,4 +1,4 @@
-package com.yangyongwen.chapter10
+package com.yangyongwen.chapter11
 
 import android.content.Context
 import android.opengl.GLES20
