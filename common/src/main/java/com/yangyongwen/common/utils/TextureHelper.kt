@@ -45,9 +45,7 @@ object TextureHelper {
     }
 
     fun loadCubeMap(context: Context, cubeResources: IntArray): Int {
-        when {
-            cubeResources.size != 6 -> throw IllegalArgumentException()
-        }
+        require(cubeResources.size == 6)
         val textureObjectIds = IntArray(1)
         GLES20.glGenTextures(1, textureObjectIds, 0)
         if (textureObjectIds[0] == 0) {

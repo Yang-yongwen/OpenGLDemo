@@ -34,7 +34,7 @@ open class ShaderProgram(context: Context, vertexShaderResId: Int, fragmentShade
         ResourceUtils.readTextFromResource(context, fragmentShaderResId)
     )
 
-    protected inline fun glGetAttrLocation(name: String): Int {
+    protected inline fun glGetAttribLocation(name: String): Int {
         return GLES20.glGetAttribLocation(program, name)
     }
 

@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import com.yangyongwen.chapter10.Chapter10Activity
 import com.yangyongwen.chapter11.Chapter11Activity
+import com.yangyongwen.chapter12.Chapter12Activity
 import com.yangyongwen.chapter3.Chapter3Activity
 import com.yangyongwen.chapter4.Chapter4Activity
 import com.yangyongwen.chapter5.Chapter5Activity
@@ -26,7 +27,8 @@ class MainActivity : AppCompatActivity() {
         Chapter7Activity::class.java,
         Chapter8Activity::class.java,
         Chapter10Activity::class.java,
-        Chapter11Activity::class.java
+        Chapter11Activity::class.java,
+        Chapter12Activity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

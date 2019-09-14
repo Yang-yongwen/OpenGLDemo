@@ -17,10 +17,10 @@ class ParticleShaderProgram(context: Context) :
     private val uTimeLocation = glGetUniformLocation(U_TIME)
     private val uTextureLocation = glGetUniformLocation(U_TEXTURE_UNIT)
 
-    val aPositionLocation = glGetAttrLocation(A_POSITION)
-    val aColorLocation = glGetAttrLocation(A_COLOR)
-    val aDirectionVectorLocation = glGetAttrLocation(A_DIRECTION_VECTOR)
-    val aParticlesStartTimeLocation = glGetAttrLocation(A_PARTICLE_START_TIME)
+    val aPositionLocation = glGetAttribLocation(A_POSITION)
+    val aColorLocation = glGetAttribLocation(A_COLOR)
+    val aDirectionVectorLocation = glGetAttribLocation(A_DIRECTION_VECTOR)
+    val aParticlesStartTimeLocation = glGetAttribLocation(A_PARTICLE_START_TIME)
 
     fun setUniforms(matrix: FloatArray, elapsedTime: Float, textureId: Int) {
         GLES20.glUniformMatrix4fv(uMatrixLocation, 1, false, matrix, 0)
